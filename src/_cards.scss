@@ -1,0 +1,35 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  margin-bottom: 2em;
+  padding: 1.5em;
+  border-radius: .5em;
+  background-color: white;
+  box-shadow: 0.25em 0.25em 0.5em 0 $greyishBlue;
+}
+
+.card__title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.card__image {
+  justify-self: end;
+}
+
+#card__supervisor {
+  border-top: 3px solid $cyan;
+}
+
+#card__team-builder {
+  border-top: 3px solid $red;
+}
+
+#card__karma {
+  border-top: 3px solid $orange;
+}
+
+#card__calculator {
+  border-top: 3px solid $blue;
+}

@@ -15,16 +15,14 @@ body {
   font-size: 0.75rem;
   line-height: 1.55;
   color: $veryDarkBlue;
+  font-weight: 300;
 }
 
-h1, h2 {
+h1, h2, h3 {
   margin: 0;
 }
 
 .container {
   padding-left: 2em;
   padding-right: 2em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
