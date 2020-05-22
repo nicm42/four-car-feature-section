@@ -6,7 +6,6 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
-const tailwindcss = require("tailwindcss");
 const sourcemaps = require("gulp-sourcemaps");
 const browserSync = require("browser-sync").create();
 
@@ -21,7 +20,7 @@ function scssTask(){
     return src(files.scssPath)
         .pipe(sourcemaps.init()) // initialize sourcemaps first
         .pipe(sass().on('error', sass.logError)) // compile SCSS to CSS
-        .pipe(postcss([ autoprefixer({ grid: 'autoplace' }), cssnano(), tailwindcss() ])) // PostCSS plugins
+        .pipe(postcss([ autoprefixer({ grid: 'autoplace' }), cssnano() ])) // PostCSS plugins
         .pipe(sourcemaps.write('.')) // write sourcemaps file in current directory
         .pipe(dest('./') // put final CSS in dist folder
     );
