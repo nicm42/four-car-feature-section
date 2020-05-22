@@ -1,9 +1,13 @@
+.cards {
+  padding-top: .3em;
+}
+
 .card {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
-  margin-bottom: 2em;
-  padding: 1.5em;
+  margin-bottom: 1.8em;
+  padding: 1.5em 2em;
   border-radius: .5em;
   background-color: white;
   box-shadow: 0.25em 0.25em 0.5em 0 $greyishBlue;
@@ -14,8 +18,17 @@
   font-size: 1rem;
 }
 
+.card__text {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 0.675rem;
+}
+
 .card__image {
   justify-self: end;
+  height: 66%;
+  width: auto;
+  margin-top: 1.6em;
 }
 
 #card__supervisor {
