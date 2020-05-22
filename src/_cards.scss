@@ -10,7 +10,7 @@
   padding: 1.5em 2em;
   border-radius: .5em;
   background-color: white;
-  box-shadow: 0.25em 0.25em 0.5em 0 $greyishBlue;
+  box-shadow: 0 0.5em 0.75em 0.25em lighten($greyishBlue, 25);
 }
 
 .card__title {
