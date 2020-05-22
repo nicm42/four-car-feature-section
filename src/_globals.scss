@@ -25,7 +25,13 @@ h1, h2, h3 {
 .container {
   padding-left: 2em;
   padding-right: 2em;
-  @include breakpoint-up(small){
+
+  @include breakpoint-up(medium){
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  @include breakpoint-up(extra-large){
     padding-left: 11em;
     padding-right: 11em;
   }

@@ -1,13 +1,15 @@
 .cards {
   padding-top: .3em;
   margin-bottom: 2em;
-  @include breakpoint-up(small){
+
+  @include breakpoint-up(large){
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2em;
     grid-row-gap: 2.5em;
   }
+
 }
 
 .card {
@@ -19,9 +21,11 @@
   border-radius: .5em;
   background-color: white;
   box-shadow: 0 0.5em 0.75em 0.25em lighten($greyishBlue, 25);
-  @include breakpoint-up(small){
+
+  @include breakpoint-up(large){
     height: 100%;
   }
+
 }
 
 .card__title {
@@ -44,31 +48,39 @@
 
 #card__supervisor {
   border-top: 3px solid $cyan;
-  @include breakpoint-up(small){
+
+  @include breakpoint-up(large){
     grid-row: 2 / span 2;
   }
+
 }
 
 #card__team-builder {
   border-top: 3px solid $red;
-  @include breakpoint-up(small){
+
+  @include breakpoint-up(large){
     grid-row: 1 / span 2;
     grid-column-start: 2;
   }
+
 }
 
 #card__karma {
   border-top: 3px solid $orange;
-  @include breakpoint-up(small){
+
+  @include breakpoint-up(large){
     grid-row: 3 / span 2;
     grid-column-start: 2;
   }
+
 }
 
 #card__calculator {
   border-top: 3px solid $blue;
-  @include breakpoint-up(small){
+
+  @include breakpoint-up(large){
     grid-row: 2 / span 2;
     grid-column-start: 3;
   }
+
 }
