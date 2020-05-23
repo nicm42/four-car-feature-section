@@ -4,10 +4,16 @@
 
   @include breakpoint-up(medium){
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    /*grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2em;
-    grid-row-gap: 2.5em;
+    grid-row-gap: 2.5em;*/
+    /*Above works for all but IE,
+    but the autoprefixer converts gaps to extra rows/columns
+    So it's going to be simpler to write it with those extra rows/columns*/
+    //grid-template-rows: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+    grid-template-rows: 1fr 1fr 2em 1fr 1fr;
+    grid-template-columns: 1fr 2.5em 1fr 2.5em 1fr;
   }
 
 }
@@ -49,7 +55,7 @@
   border-top: 3px solid $cyan;
 
   @include breakpoint-up(medium){
-    grid-row: 2 / span 2;
+    grid-row: 2 / span 3;
   }
 
 }
@@ -59,7 +65,7 @@
 
   @include breakpoint-up(medium){
     grid-row: 1 / span 2;
-    grid-column-start: 2;
+    grid-column-start: 3;
   }
 
 }
@@ -68,8 +74,8 @@
   border-top: 3px solid $orange;
 
   @include breakpoint-up(medium){
-    grid-row: 3 / span 2;
-    grid-column-start: 2;
+    grid-row: 4 / span 2;
+    grid-column-start: 3;
   }
 
 }
@@ -78,8 +84,8 @@
   border-top: 3px solid $blue;
 
   @include breakpoint-up(medium){
-    grid-row: 2 / span 2;
-    grid-column-start: 3;
+    grid-row: 2 / span 3;
+    grid-column-start: 5;
   }
 
 }
