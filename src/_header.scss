@@ -1,0 +1,41 @@
+header {
+  margin-top: 6em;
+  margin-bottom: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40rem;
+  text-align: center;
+
+  @include breakpoint-up(large){
+    margin-top: 5em;
+    margin-bottom: 4em;
+  }
+}
+
+.header__subheader {
+  font-weight: 300;
+  font-size: 1.2rem;
+
+  @include breakpoint-up(large){
+    font-size: 2.4em;
+  }
+}
+
+.header__title {
+  font-weight: 600;
+  font-size: 1.2rem;
+
+  @include breakpoint-up(large){
+    font-size: 2.4em;
+  }
+}
+
+.header__intro {
+  margin-top: 0.75em;
+  text-align: center;
+  line-height: 1.6;
+
+  @include breakpoint-up(medium){
+    margin-top: 1em;
+  }
+}
