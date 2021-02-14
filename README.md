@@ -5,6 +5,7 @@
 * [General info](#general-info)
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
+* [Learnings](#learnings)
 * [Setup](#setup)
 * [Status](#status)
 * [Inspiration](#inspiration)
@@ -22,6 +23,10 @@ I did this to practise CSS Grid, since the four cards are in a very different co
 * HTML
 * CSS Grid
 * Gulp 4
+
+## Learnings
+* CSS Grid
+* CSS Grid in IE
 
 ## Setup
 To view this project visit the [demo](https://four-card-feature-nm.netlify.app/) or download the files and open index.html
